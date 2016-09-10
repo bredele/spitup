@@ -19,6 +19,13 @@ tape('should append primitives to attribute', test => {
 })
 
 
+tape('should append array to attribute', test => {
+	test.plan(1)
+	var el = append(['how','are','you','doing'])
+	test.equal(el.getAttribute('class'), 'how are you doing')	
+})
+
+
 /**
  * Append value to the class attribute
  * of a newly created element.
