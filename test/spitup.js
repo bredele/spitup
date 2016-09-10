@@ -12,6 +12,13 @@ tape('should append string to attribute', test => {
 })
 
 
+tape('should append primitives to attribute', test => {
+	test.plan(1)
+	var el = append('hello world', 2, true)
+	test.equal(el.getAttribute('class'), 'hello world2true')
+})
+
+
 /**
  * Append value to the class attribute
  * of a newly created element.
@@ -24,7 +31,9 @@ tape('should append string to attribute', test => {
 function append(str) {
 	var div = document.createElement('div')
 	var attr = document.createAttribute('class')
-	spitup(attr, str)
+	for(var i = 0, l = arguments.length; i < l; i++) {
+		spitup(attr, arguments[i])
+	}
 	div.attributes.setNamedItem(attr)
 	return div
 }
