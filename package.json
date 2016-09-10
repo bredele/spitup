@@ -1,10 +1,10 @@
 {
   "name": "spitup",
   "version": "1.0.0",
-  "description": "",
+  "description": "append any kind of values to a DOM attribute",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "browserify test/*.js | tape-run"
   },
   "repository": {
     "type": "git",
