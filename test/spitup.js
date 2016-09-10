@@ -26,6 +26,14 @@ tape('should append array to attribute', test => {
 })
 
 
+tape('should append function to attribute', test => {
+	test.plan(1)
+	var el = append(function() {
+		return 'hello world'
+	})
+	test.equal(el.getAttribute('class'), 'hello world')
+})
+
 /**
  * Append value to the class attribute
  * of a newly created element.
