@@ -1,0 +1,29 @@
+{
+  "name": "spitup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bredele/spitup.git"
+  },
+  "keywords": [
+    "attribute",
+    "stream",
+    "promise"
+  ],
+  "author": "Olivier Wietrich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bredele/spitup/issues"
+  },
+  "homepage": "https://github.com/bredele/spitup",
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "tape": "^4.6.0",
+    "tape-run": "^2.1.4"
+  }
+}
